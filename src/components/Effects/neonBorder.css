@@ -1,0 +1,51 @@
+.neon-border {
+     /* Adjust as needed */
+     /* Adjust as needed */
+     /* Set your desired background color */
+    border: 2px solid transparent; /* Initial border (transparent) */
+    box-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 30px #0fa; /* Neon glow effect */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition */
+  }
+  
+  .neon-border:hover {
+    box-shadow: 0 0 20px #0fa, 0 0 40px #0fa, 0 0 60px #0fa; /* Increase glow on hover */
+  }
+
+
+  .neon-border-black {
+    
+    border: 2px solid transparent;
+    box-shadow: 0 0 20px #000, 0 0 20px #000, 0 0 30px #000;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .neon-border-black:hover {
+    box-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 60px #000;
+  }
+
+  
+  .neon-border-red {
+    
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .neon-border-red:hover {
+    box-shadow: 0 0 20px #f00, 0 0 40px #f00, 0 0 60px #f00;
+  }
+
+  
+  .neon-border-blue {
+   
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .neon-border-blue:hover {
+    box-shadow: 0 0 20px #00f, 0 0 40px #00f, 0 0 60px #00f;
+  }
+  
+
+  

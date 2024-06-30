@@ -1,0 +1,22 @@
+/* YourComponent.css (or any relevant CSS file) */
+
+.cards-scroll {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    scrollbar-width: thin; 
+    scrollbar-color: white transparent 
+     /* Prevent cards from wrapping to the next line */
+  }
+  
+  .card {
+    flex: 0 0 auto; /* Prevent cards from growing or shrinking */
+    width: 300px; /* Adjust the card width as needed */
+    margin-right: 10px; /* Add spacing between cards */
+    /* Other styling properties for your cards */
+  }
+  
+  .card img {
+    max-width: 100%; /* Ensure images fit within the card */
+  }
+  
