@@ -24,7 +24,7 @@ const ProfileCard = () => {
   const [formDataEpic, setFormDataEpic] = useState();
 
   const getDetails = async () => {
-    const response = await axios.post("/api/user/getCurrent", {
+    const response = await axios.post(process.env.REACT_APP_GV_API+"/api/user/getCurrent", {
       email: user.email,
     });
 
@@ -56,7 +56,7 @@ const ProfileCard = () => {
   }
 
   const goMyPost=()=>{
-    localStorage.setItem("myID", user._id);
+    localStorage.setItem("myID", user._id); 
     history.push('myPost');
   }
 
@@ -86,6 +86,7 @@ const ProfileCard = () => {
             <div className='flex mx-auto mt-2 mb-4 ' style={{ textAlign: 'center' }}>
               <Button variant="outline-light ml-2">Alias</Button>
               <Button variant="outline-light ml-2" onClick={goEdit}>Edit Profile</Button>
+              
               <Button variant="outline-light ml-2" href={user.steam} target='new'>Steam</Button>
             
               <Button variant="outline-light ml-2">Epic Games</Button>

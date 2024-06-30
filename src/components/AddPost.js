@@ -123,7 +123,7 @@ const AddPost = () => {
           "Content-type": "application/json",
         },
       };
-      const { data } = await axios.post(
+      const { data } = await axios.post(process.env.REACT_APP_GV_API+
         "/api/posts/addPost",
         {
           userName,userImg,userID,postID,postImg,postCaption,likeCount,postTime

@@ -21,6 +21,8 @@ const Login = () => {
     const { setUser } = ChatState();
 
     const submitHandler = async () => {
+
+     
       setLoading(true);
       if (!email || !password) {
         toast({
@@ -41,9 +43,8 @@ const Login = () => {
           },
         };
   
-        const { data } = await axios.post(
-          "/api/user/login",
-          { email, password },
+        const { data } = await axios.post(process.env.REACT_APP_GV_API+"/api/user/login",
+          { email, password }, 
           config
         ); 
   
@@ -61,7 +62,7 @@ const Login = () => {
       } catch (error) {
         toast({
           title: "Error Occured!",
-          description: error.response.data.message,
+          //description: error.response.data.message,
           status: "error",
           duration: 5000,
           isClosable: true,

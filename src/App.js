@@ -16,6 +16,8 @@ import MyPosts from './components/MyPosts';
 
 
 function App() {
+
+ 
   return (
     
       <div className="App share-tech mono-regular">

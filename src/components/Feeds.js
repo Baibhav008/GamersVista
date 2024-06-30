@@ -27,7 +27,7 @@ const Feeds = () => {
     useEffect(() => {
 
 
-        axios.post("/api/posts/")
+        axios.post(process.env.REACT_APP_GV_API+"/api/posts/")
             .then((res) => {
                 console.log(res)
     
@@ -40,7 +40,7 @@ const Feeds = () => {
 
     const likeHandler = async (postid, userid) => {
         try {
-            const response = await axios.post("/api/posts/like", {
+            const response = await axios.post(process.env.REACT_APP_GV_API+"/api/posts/like", {
                 postID: postid,
                 userID: userid,
             });

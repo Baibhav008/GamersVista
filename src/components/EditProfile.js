@@ -59,7 +59,7 @@ const EditProfile = () =>
         const steamAccountF = document.getElementById('fSteam').value;
         const epicAccountF = document.getElementById('fEpic').value
 
-        const response = await axios.post("/api/user/updateUser",{
+        const response = await axios.post(process.env.REACT_APP_GV_API+"/api/user/updateUser",{
             name : nameF,
             email : user.email,
             pic : user.pic,
@@ -82,7 +82,7 @@ const EditProfile = () =>
     };
 
     const getDetails = async()=>{
-        const response = await axios.post("/api/user/getCurrent",{
+        const response = await axios.post(process.env.REACT_APP_GV_API+"/api/user/getCurrent",{
             email : editEmail,
         });
 
@@ -153,7 +153,7 @@ const EditProfile = () =>
 
                                 <Form.Group as={Row}  controlId="formPassword" className='mt-2'>
                                     <Form.Label column sm="4" style={{ color: "white" }}>New Password</Form.Label>
-                                    <Col sm="8"> <Form.Control id="fPassword" type="password" value="" onChange={(e) => setFormDataPassword(e.target.value)} required /></Col>
+                                    <Col sm="8"> <Form.Control id="fPassword" type="password" value={formDataPassword} onChange={(e) => setFormDataPassword(e.target.value)} required /></Col>
 
                                 </Form.Group>
 

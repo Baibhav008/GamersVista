@@ -26,7 +26,7 @@ import gameNews from '../img/gameNews.jpg'
 
 
 
-
+ 
 const Main = () => {
 
     const [gameInfo, setGameInfo] = useState([]);
@@ -34,10 +34,8 @@ const Main = () => {
     const [GameCards, setGameCards] = useState([]);
 
     const [upComing, setUpcoming] = useState([]);
-
-    // API CALL TO GET RECENT RELEASES https://api.rawg.io/api/games?key=8da6b98162ce4e409de0016d2765f791&dates=2023-01-01,2024-04-15&ordering=-released
     useEffect(() => {
-        axios.get(" https://api.rawg.io/api/games?key=8da6b98162ce4e409de0016d276")
+        axios.get(" https://api.rawg.io/api/games?key="+process.env.REACT_APP_FEED_KEY+"&dates=2023-01-01,2024-04-15&ordering=-released")
             .then((res) => {
 
                 setGameInfo(res.data.results)

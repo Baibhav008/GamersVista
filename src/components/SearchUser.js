@@ -23,7 +23,7 @@ const SearchUser = () => {
 
         const inputValue = inputElement.value;
         console.log(inputValue);
-        await axios.post("/api/user/search", { key: inputValue }).then((res) => {
+        await axios.post(process.env.REACT_APP_GV_API+"/api/user/search", { key: inputValue }).then((res) => {
             console.log(res);
             console.log(res.data);
             if (res.data == null) {

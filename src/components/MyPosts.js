@@ -32,7 +32,7 @@ const MyPosts = () => {
     }, []);
 
     const getPosts = async()=>{
-        await axios.post("/api/posts/")
+        await axios.post(process.env.REACT_APP_GV_API+"/api/posts/")
         .then((res) => {
             console.log(res);
             const filteredItems = res.data.collections.filter(item => item.userID === myID);
@@ -45,7 +45,7 @@ const MyPosts = () => {
 
     const likeHandler = async (postid, userid) => {
         try {
-            const response = await axios.post("/api/posts/like", {
+            const response = await axios.post(process.env.REACT_APP_GV_API+"/api/posts/like", {
                 postID: postid,
                 userID: userid,
             });
@@ -74,7 +74,7 @@ const MyPosts = () => {
         const confirmed = window.confirm("Are you sure you want to delete this post?");
         if (confirmed) {
             console.log(postid);
-            await axios.post("/api/posts/delete", { id: postid }).then((res) => {
+            await axios.post(process.env.REACT_APP_GV_API+"/api/posts/delete", { id: postid }).then((res) => {
                 console.log(res);
                 getPosts();
             });

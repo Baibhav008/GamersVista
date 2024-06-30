@@ -24,7 +24,7 @@ const MyGamesCard = () => {
     setUserID(user._id);
 
     try {
-      axios.post("/api/collection/", { id: user._id })
+      axios.post(process.env.REACT_APP_GV_API+"/api/collection/", { id: user._id })
       .then((res) => {
         console.log("Collections for user ID:", user._id);
         console.log(res.data.collections);
@@ -50,7 +50,7 @@ const MyGamesCard = () => {
   const refreshGames = async()=>{
 
     try {
-      axios.post("/api/collection/", { id: user._id })
+      axios.post(process.env.REACT_APP_GV_API+"/api/collection/", { id: user._id })
       .then((res) => {
         console.log("Collections for user ID:", user._id);
         console.log(res.data.collections);
@@ -79,8 +79,7 @@ const MyGamesCard = () => {
   const deleteGame = async (gid) => {
 
     console.log("Game id of game to be deleted : " + gid);
-    await axios.post(
-      "/api/collection/deleteGame", { id: gid }).then((res) => {
+    await axios.post(process.env.REACT_APP_GV_API+"/api/collection/deleteGame", { id: gid }).then((res) => {
         console.log(res.body);
         refreshGames();
       });
@@ -141,7 +140,7 @@ const MyGamesCard = () => {
           "Content-type": "application/json",
         },
       };
-      const { data } = await axios.post(
+      const { data } = await axios.post(process.env.REACT_APP_GV_API+
         "/api/collection/add-collection",
         {
           userID, gameTitle, gameImage
