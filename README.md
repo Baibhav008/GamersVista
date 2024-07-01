@@ -4,12 +4,12 @@ Welcome to **Gamer's Vista**, your ultimate gaming hub! Whether you're a casual 
 
 ## Visit : https://gamers-vista.vercel.app/
 
-**Tech Stack :** ReactJS ExpressJS NodeJS
-**Database :** MongoDB
-**UI Libraries :** Bootstrap Chakra-UI
-**Animation Libraries :** react-scroll-parallax framer-motion
-**Backend Deployment :** Render
-**Frontend Deployment :** Vercel
+- **Tech Stack :** ReactJS ExpressJS NodeJS
+- **Database :** MongoDB
+- **UI Libraries :** Bootstrap Chakra-UI
+- **Animation Libraries :** react-scroll-parallax framer-motion
+- **Backend Deployment :** Render
+- **Frontend Deployment :** Vercel
 
 ## Features
 
