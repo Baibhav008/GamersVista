@@ -61,8 +61,9 @@ const SearchUser = () => {
           </div>
           <ul className="list-group list-group-flush" style={{ fontSize: "18px", borderRadius: "20px" }}>
             <li className="list-group-item" style={{ backgroundColor: "rgba(255, 255, 255, 0.8)", color: "black" }}>{card.about}</li>
-            <li className="list-group-item" style={{ backgroundColor: "rgba(255, 255, 255, 0.8)", color: "black" }}>0 Alias</li>
-            <li className="list-group-item" style={{ backgroundColor: "rgba(255, 255, 255, 0.8)", color: "black" }}>View Profile</li>
+            <li className="list-group-item" style={{ backgroundColor: "rgba(255, 255, 255, 0.8)", color: "black" }}>0 Allies</li>
+            {/*<li className="list-group-item" style={{ backgroundColor: "rgba(255, 255, 255, 0.8)", color: "black" }}>View Profile</li> */}
+           
           </ul>
           <div className="card-body" style={{ fontSize: "20px", fontWeight: "bold", color: "white" }}>
             <a href={card.steamAccount} className="card-link">Steam</a>

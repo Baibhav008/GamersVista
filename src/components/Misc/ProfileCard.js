@@ -84,7 +84,7 @@ const ProfileCard = () => {
               <p style={{ textAlign: 'center' }}><b>ABOUT</b>  <br />{formDataAbout}</p>
             </div>
             <div className='flex mx-auto mt-2 mb-4 ' style={{ textAlign: 'center' }}>
-              <Button variant="outline-light ml-2">Alias</Button>
+              <Button variant="outline-light ml-2">Allies</Button>
               <Button variant="outline-light ml-2" onClick={goEdit}>Edit Profile</Button>
               
               <Button variant="outline-light ml-2" href={user.steam} target='new'>Steam</Button>

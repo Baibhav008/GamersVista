@@ -94,7 +94,7 @@ const Signup = () =>
         );
         console.log(data);
         toast({
-          title: "Registration Successful",
+          title: "Registration Successful Login Now",
           status: "success",
           duration: 5000,
           isClosable: true,
@@ -102,7 +102,7 @@ const Signup = () =>
         });
         localStorage.setItem("userInfo", JSON.stringify(data));
         setLoading(false);
-        history.push("/main");
+        //history.push("/main");
       } catch (error) {
         toast({
           title: "Error Occured!",
