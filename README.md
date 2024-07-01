@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Gamer's Vista 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Gamer's Vista**, your ultimate gaming hub! Whether you're a casual gamer or a hardcore enthusiast, this platform is designed to keep you informed, connected, and entertained.
 
-## Available Scripts
+## Visit : https://gamers-vista.vercel.app/
 
-In the project directory, you can run:
+- **Tech Stack :** ReactJS ExpressJS NodeJS
+- **Database :** MongoDB
+- **UI Libraries :** Bootstrap Chakra-UI
+- **Animation Libraries :** react-scroll-parallax framer-motion
+- **Backend Deployment :** Render
+- **Frontend Deployment :** Vercel
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Stay Updated**
+   - Dive into the latest gaming news.
+   - Discover industry updates, game releases, and more.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Personal Collections**
+   - Showcase your game library.
+   - Add your favorite titles to collections and share them with friends.
 
-### `npm test`
+3. **Express Yourself**
+   - Create and view posts in our vibrant feeds section.
+   - Discuss games, strategies, and everything gaming-related.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **User Search**
+   - Find fellow gamers easily.
 
-### `npm run build`
+## Upcoming Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We're constantly improving Gamer's Vista! Here's what's coming soon:
+- **Allies:** Connect, collaborate, and build your gaming network.
+- **Chat:** Engage in one-on-one or group conversations with other users.
+- **Video Posts:** Share gameplay clips, reviews, and more.
+- **Android App:** Take Gamer's Vista on the go with our upcoming Android version.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## SCREENSHOTS
+![image](https://github.com/Baibhav008/GamersVista/assets/119806719/a9a5d757-232b-4067-8263-9201804b9236)
+![image](https://github.com/Baibhav008/GamersVista/assets/119806719/96db8565-af5d-4c40-9486-638607777eb2)
+![image](https://github.com/Baibhav008/GamersVista/assets/119806719/08c235b3-187e-41ea-b6f4-f3e21b66b6f1)
+![image](https://github.com/Baibhav008/GamersVista/assets/119806719/67964b18-8c6c-464f-8be0-d6fb35cd230b)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
